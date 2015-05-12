@@ -6,23 +6,16 @@ function frameYourPhrase(phrase) {
 }
 
 function isPrime(num) {
-  var arr = [];
-  for (var i = 0; i <= num; i++) {
-    var notprime = false
-      for (var j = 2; j < i; j++) {
-      if (i % j === 0) {      
-      notprime = true;
+
+   if(num < 1) return false;
+    for (var i = 2; i < num; i++) {
+        if(num%i===0)
+            return false;
     }
+    return true;
   }
-      if (notprime === false) {
-      arr.push(i);
-    }
-  }
-    return arr;
 }
-    return false;
-}
-//hello ssdfsdfsd
+
 
 console.log(frameYourPhrase("Hello World!"));
 console.log(frameYourPhrase("This should print a new box!"));
