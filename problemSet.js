@@ -17,7 +17,7 @@ function isPrime(num) {
 }
 
 
-console.log(frameYourPhrase("Hello World!"));
+console.log(frameYourPhrase("Hola gALVINIZE"));
 console.log(frameYourPhrase("This should print a new box!"));
 
 if (isPrime(5)) {
